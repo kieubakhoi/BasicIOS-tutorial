@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="BasicIOS_tutorial_MapView" customModuleProvider="target">
+            <connections>
+                <outlet property="mapView" destination="3jy-1K-Jd5" id="HBx-xs-03u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3jy-1K-Jd5">
+                    <rect key="frame" x="0.0" y="39" width="414" height="818"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="HNb-e5-7tv"/>
+                        <constraint firstAttribute="height" constant="818" id="QNV-TH-E1C"/>
+                    </constraints>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC4-Zi-Jwk">
+                    <rect key="frame" x="132" y="778" width="150" height="50"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="FbJ-px-v7W"/>
+                        <constraint firstAttribute="width" constant="150" id="VMG-sZ-GeU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="Current Location">
+                        <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                    </state>
+                    <connections>
+                        <action selector="moveToCurrentLocaltion:" destination="-1" eventType="touchUpInside" id="icD-eI-7ZA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wC4-Zi-Jwk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Cn6-h5-PkC"/>
+                <constraint firstItem="3jy-1K-Jd5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OMR-zP-XHQ"/>
+                <constraint firstItem="3jy-1K-Jd5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="evs-a4-lxk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wC4-Zi-Jwk" secondAttribute="bottom" constant="34" id="thB-JI-fK2"/>
+            </constraints>
+            <point key="canvasLocation" x="47.826086956521742" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

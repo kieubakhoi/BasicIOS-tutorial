@@ -1,0 +1,6 @@
+framework module Pods_BasicIOS_tutorial_ProjectTemplate_BasicIOS_tutorial_ProjectTemplateUITests {
+  umbrella header "Pods-BasicIOS-tutorial-ProjectTemplate-BasicIOS-tutorial-ProjectTemplateUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
